@@ -1,0 +1,115 @@
+/* deleting extra spaces */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styling global button */
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    padding: 15px 35px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+/* styling header section */
+.header-section{
+    height: 1000px;
+    width: 100%;
+    background-image: url("./imgs/elegant-woman.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.header-section h2{
+    text-transform: uppercase;
+    padding-top: 25%;
+    font-weight: 400;
+    font-size: 120px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+}
+/* styling banner section */
+.banner-section{
+    height: 440px;
+    width: 100%;
+    background-color: #ebe2de;
+    text-align: center;
+}
+.banner-section .banner{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.banner-section .banner div{
+    padding-top: 120px;
+    align-self: center;
+}
+/* styling detail section */
+.detail-section{
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.detail-section div{
+    align-self: center;
+    padding: 10px 20px;
+}
+/* styling contact section */
+.contact-section{
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.contact-section .image{
+    align-self: center;
+    padding: 20px;
+}
+.contact-section .image img{
+    height: 100%;
+    width: 100%;
+}
+.contact-section .content{
+    align-self: center;
+    padding: 20px;
+}
+/* styling delivery section */
+.delivery-section{
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.delivery-section div{
+    align-self: center;
+}
+.delivery-section div img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+/* styling footer section */
+.footer-section{
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.footer-section .social{
+    align-self: center;
+}
+.footer-section .adress{
+    align-self: center;
+}
+.footer-section .email{
+    align-self: center;
+}
