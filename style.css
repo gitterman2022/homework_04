@@ -136,41 +136,106 @@
 }
 /* styling delivery section */
 .delivery-section{
-    height: 700px;
+    height: 900px;
     width: 100%;
     text-align: center;
 }
 .delivery-section .delivery-heading h2{
-    font-size: 80px;
-    padding-top: 60px;
+    font-size: 70px;
+    padding-top: 50px;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
 }
 .delivery-section .delivery-heading h5{
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     letter-spacing: 5px;
 }
 .delivery-section .image{
     display: grid;
     grid-template-columns: auto auto auto;
+    height: 50%;
+    width: 100%;
+    padding: 0 170px;
+    column-gap: 20px;
 }
-.delivery-content
+.delivery-section .image .img-1{
+    background-image: url("./imgs/elegant-woman.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.delivery-section .image .img-2{
+    background-image: url("./imgs/32.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.delivery-section .image .img-3{
+    background-image: url("./imgs/23.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.delivery-section .delivery-content p{
+    padding-left: 400px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #666;
+    padding-right: 400px;
+    padding-top: 50px;
+}
 /* styling footer section */
 .footer-section{
     height: 700px;
     width: 100%;
+    background-color: #ebe2de;
+    padding: 80px 202px;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: auto auto auto;
 }
 .footer-section .social{
     align-self: center;
+    height: 100%;
+    width: 100%;
+}
+.footer-section .social h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.footer-section .social p{
+    padding-top: 40px;
 }
 .footer-section .adress{
     align-self: center;
+    height: 100%;
+    width: 100%;
 }
 .footer-section .email{
     align-self: center;
+    height: 100%;
+    width: 100%;
+}
+.footer-section .email input{
+    width:80%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    float: right;
+}
+.footer-section .email textarea{
+    width:80%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    float: right;
+}
+.footer-section .email button{
+    border-radius: 15px;
+    width: 80%;
+    margin-top: 20px;
+    float: right;
 }
