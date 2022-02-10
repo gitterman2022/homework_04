@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  'Roboto', sans-serif;
 }
 /* styling global button */
 .btn{
@@ -16,7 +17,7 @@
     border: none;
     padding: 15px 35px;
     margin-top: 50px;
-    font-family: 'Roboto', sans-serif;
+
 }
 /* styling header section */
 .header-section{
@@ -42,13 +43,13 @@
     width: 100%;
     background-color: #ebe2de;
     text-align: center;
+    padding: 140px 200px;
 }
 .banner-section .banner{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
 .banner-section .banner div{
-    padding-top: 120px;
     align-self: center;
 }
 /* styling detail section */
@@ -56,11 +57,26 @@
     height: 700px;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
+    padding: 70px 415px;
 }
 .detail-section div{
     align-self: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
+}
+.detail-section .bg-col{
+    background-color: #ebe2de;
+}
+.detail-section div h2{
+    float: left;
+    padding-left: 30px;
+}
+.detail-section div p{
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 100px;
+    color: #777;
+    font-size: 20px;
 }
 /* styling contact section */
 .contact-section{
@@ -71,32 +87,77 @@
 }
 .contact-section .image{
     align-self: center;
-    padding: 20px;
+    padding-left: 310px;
+    padding-right: 40px;
 }
-.contact-section .image img{
+.contact-section .image div img{
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
 .contact-section .content{
     align-self: center;
-    padding: 20px;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.contact-section .content .content-heading{
+    align-self: center;
+    height: 100%;
+}
+.contact-section .content .content-heading p i{
+    padding: 10px;
+    font-size: 30px;
+}
+.contact-section .content .content-heading h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    padding-bottom: 100px;
+}
+.contact-section .content .content-detail{
+    align-self: center;
+    height: 100%;
+}
+.contact-section .content .content-detail p{
+    line-height: 30px;
+    color: #555;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 185px;
+    padding-right: 185px;
+}
+.contact-section .content .content-detail h2 a{
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
 }
 /* styling delivery section */
 .delivery-section{
     height: 700px;
     width: 100%;
+    text-align: center;
+}
+.delivery-section .delivery-heading h2{
+    font-size: 80px;
+    padding-top: 60px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+}
+.delivery-section .delivery-heading h5{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    letter-spacing: 5px;
+}
+.delivery-section .image{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: auto auto auto;
 }
-.delivery-section div{
-    align-self: center;
-}
-.delivery-section div img {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-}
+.delivery-content
 /* styling footer section */
 .footer-section{
     height: 700px;
