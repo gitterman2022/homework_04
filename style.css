@@ -187,10 +187,10 @@
 }
 /* styling footer section */
 .footer-section{
-    height: 700px;
+    height: 650px;
     width: 100%;
     background-color: #ebe2de;
-    padding: 80px 202px;
+    padding: 100px 200px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
@@ -201,16 +201,45 @@
 }
 .footer-section .social h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 55px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+.footer-section .social em b{
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 17px;
+    color: #222;
 }
 .footer-section .social p{
-    padding-top: 40px;
+    padding-top: 35px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 17px;
+    color: #555;
+    font-weight: 400;
+}
+.footer-section .social span i{
+    padding-top: 30px;
+    font-size: 20px;
+    padding-right: 15px;
 }
 .footer-section .adress{
     align-self: center;
     height: 100%;
     width: 100%;
+}
+.footer-section .adress div h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding-bottom: 25px;
+}
+.footer-section .adress div p{
+    color: #444;
+    line-height: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 1px;
 }
 .footer-section .email{
     align-self: center;
@@ -218,24 +247,22 @@
     width: 100%;
 }
 .footer-section .email input{
-    width:80%;
+    width:100%;
     padding: 15px;
     font-size: 18px;
     border-radius: 15px;
     border: none;
-    float: right;
+    color: #666;
 }
 .footer-section .email textarea{
-    width:80%;
+    width:100%;
     padding: 15px;
     font-size: 18px;
     border-radius: 15px;
     border: none;
-    float: right;
 }
 .footer-section .email button{
     border-radius: 15px;
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
-    float: right;
 }
