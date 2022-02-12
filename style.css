@@ -16,7 +16,7 @@
     letter-spacing: 1px;
     border: none;
     padding: 15px 35px;
-    margin-top: 50px;
+    margin-top: 25px;
 
 }
 /* styling header section */
@@ -27,11 +27,12 @@
     background-position: center;
     background-size: cover;
     color: #fff;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-section h2{
     text-transform: uppercase;
-    padding-top: 25%;
     font-weight: 400;
     font-size: 120px;
     font-family: 'Montserrat', sans-serif;
@@ -39,42 +40,51 @@
 }
 /* styling banner section */
 .banner-section{
-    height: 440px;
+    height: 450px;
     width: 100%;
     background-color: #ebe2de;
     text-align: center;
-    padding: 140px 200px;
 }
-.banner-section .banner{
+.banner-section .logo{
+    width: 80%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-gap:  10px;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 110px;
+    padding-bottom: 50px;
 }
-.banner-section .banner div{
+.banner-section  .logo div{
     align-self: center;
 }
 /* styling detail section */
 .detail-section{
     height: 700px;
     width: 100%;
+}
+.detail-section .detail{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 70px 415px;
+    padding: 70px 150px;
+    margin: 0 auto;
+    width: 80%;
+    grid-gap: 20px;
 }
-.detail-section div{
+.detail-section .detail div{
     align-self: center;
     padding: 15px 20px;
 }
-.detail-section .bg-col{
+.detail-section .detail .bg-col{
     background-color: #ebe2de;
 }
-.detail-section div h2{
+.detail-section .detail div h2{
     float: left;
     padding-left: 30px;
 }
-.detail-section div p{
+.detail-section .detail div p{
     font-weight: 400;
     line-height: 30px;
-    padding-left: 100px;
+    padding-left: 115px;
     color: #777;
     font-size: 20px;
 }
@@ -90,7 +100,7 @@
     padding-left: 310px;
     padding-right: 40px;
 }
-.contact-section .image div img{
+.contact-section .image img{
     height: 100%;
     width: 80%;
 }
@@ -244,7 +254,8 @@
 .footer-section .email{
     align-self: center;
     height: 100%;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 .footer-section .email input{
     width:100%;
@@ -265,4 +276,150 @@
     border-radius: 15px;
     width: 100%;
     margin-top: 20px;
+}
+/* styling for mobile reponsiveness */
+@media only screen and (max-width: 780px) {
+    /* styling for header section */
+    .header-section{
+        flex-direction: column;
+        width: 100%;
+        height: 55vh;
+    }
+    .header-section h2{
+        font-size: 60px;
+    }
+    /* styling for banner section */
+    .banner-section{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .banner-section .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .banner-section .logo div{
+        padding-bottom: 50px;
+    }
+    /* styling for detail section */
+    .detail-section {
+        height: fit-content;
+        padding-top: 50px;
+    }
+    .detail-section .detail{
+        grid-template-columns: 1fr;
+        float: left;
+        padding: 30px;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .detail-section .detail div h2{
+        padding-left: 0;
+        float: left;
+    }
+    .detail-section .detail div p{
+        padding-left: 0;
+        float: left;
+    }
+    /* styling for contact section */
+    .contact-section{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .contact-section .image{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contact-section .image img{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .contact-section .content{
+        padding-top: 60px;
+        width: 100%;
+    }
+    .contact-section .content .content-heading h2{
+        padding-bottom: 50px;
+    }
+    .contact-section .content .content-detail p{
+        padding: 0 30px;
+        padding-bottom: 25px;
+    }
+    /* styling for delivery section */
+    .delivery-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .delivery-section .delivery-heading{
+        padding-bottom: 50px;
+        padding-top: 110px;
+    }
+    .delivery-section .delivery-heading h2{
+        font-size: 45px;
+        padding: 0 30px;
+    }
+    .delivery-section .image{
+        grid-template-columns: auto;
+        padding: 0 30px;
+        grid-gap: 10px;
+        padding-bottom: 0px;
+    }
+    .delivery-section .image .img-1{
+        width: 100%;
+        height: 500px;
+    }
+    .delivery-section .image .img-2{
+        width: 100%;
+        height: 525px;
+    }
+    .delivery-section .image .img-3{
+        width: 100%;
+        height: 525px;
+    }
+    .delivery-section .delivery-content{
+        padding: 80px 0;
+    }
+    .delivery-section .delivery-content p{
+        padding: 0 30px;
+    }
+    /* styling for footer section */
+    .footer-section{
+        grid-template-columns: auto;
+        height: fit-content;
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .footer-section .social{ 
+        padding: 0;
+    }
+    .footer-section .social h2{
+        font-size: 60px;
+        font-weight: 600;
+        padding: 0 30px 30px 30px;
+    }
+    .footer-section .social span i{
+        padding: 30px 10px 50px 10px;
+    }
+    .footer-section .adress{
+        padding: 0 30px 50px 30px;
+    }
+    .footer-section .adress div p span{
+        float: left;
+    }
+    .footer-section .email{
+        padding: 0 30px
+    }
 }
