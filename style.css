@@ -278,7 +278,7 @@
     margin-top: 20px;
 }
 /* styling for mobile reponsiveness */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 480px) {
     /* styling for header section */
     .header-section{
         flex-direction: column;
